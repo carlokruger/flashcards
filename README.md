@@ -7,8 +7,8 @@ First, you have to come up with the topic for your memory board. When selecting 
 Once you have chosen your topic of interest, edit the given HTML code. Add a suitable title for your memory-board and nine <div> elements with question terms (in our case, countries).
 
 ### Objectives
-1. Make an appropriate title using a <h1> element
-2. Create a <div> with the question term for each of the nine cards
+1. Make an appropriate title using a h1 element
+2. Create a div with the question term for each of the nine cards
 
 ### Example
 The resulting web page should look like something like this:
