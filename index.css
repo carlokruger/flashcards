@@ -3,8 +3,10 @@
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     /*background-color: white;*/
-    max-width: 75%;
-    margin: auto;
+
+    max-width: 470px;
+    margin: 25px auto;
+    text-align: center;
 }
 
 .cell {
@@ -19,8 +21,8 @@ body {
 
 p {
     color: coral;
-    margin: 10px;
-    padding: 10px;
+    /*margin: 10px;
+    padding: 10px;*/
 }
 
 h1 {
@@ -30,5 +32,8 @@ h1 {
 
 .back {
     background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
-    max-width: 75%;
+    /*max-width: 75%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
