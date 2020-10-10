@@ -12,6 +12,7 @@
 .cell {
     width: 150px;
     height: 150px;
+    line-height: 150px;
     background-color: rgb(249,239,229);
 }
 
@@ -28,6 +29,7 @@ p {
 h1 {
     font-family: 'Roboto Slab', serif;
     padding: 10px;
+
 }
 
 .back {
@@ -36,4 +38,5 @@ h1 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    margin: auto;
 }
