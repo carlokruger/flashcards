@@ -42,3 +42,38 @@ Be careful, don't use extra elements without need.
 The result of this stage should look something like this:
 ![finished design](https://ucarecdn.com/693b0b58-fdad-4cee-91fb-8b632a75d082/)
 
+## Stage 3/3: On the flip side
+### Description
+Your flashcards look beautiful, but something important is still missing. The advantage of flashcards is that they contain answers on the back side so that you can check yourself. For each card, let's create the flip side with the answer (in our case, the capital), which will appear when the user hovers the cursor over the card.
+
+CSS animations are a lot of fun: they are beautiful and not too difficult to implement even for beginners. CSS provides a great variety of effects that you can choose from, and the best option for flashcards is probably flip animation.
+
+To implement the effect, you can either go through our explanation, watch the Youtube [tutorial on flipping card animation](https://www.youtube.com/watch?v=SdC0DDdT_rM), or do both.
+
+If you refer to the tutorial, note: for some browsers the code provided there may not work correctly. You might see the back inscription when the card is flipped; to fix this, add <i>backface-visibility: hidden</i> to the parent of the front and back divs.
+It's easy to understand how to make the flip animation if you imagine that you have to make a flashcard from three pieces of paper, which represent correspondent divs:
+![3 cards](https://ucarecdn.com/afb9ead0-249d-47ab-8b89-4627e8e565bd/)
+
+
+To glue the back side correctly, you need to flip it. Use the <i>transform</i> property. The papers would look like this if you could see the text through the paper:
+![reversed back](https://ucarecdn.com/434105aa-cff5-453f-a01b-91eed8b56e1f/)
+
+
+Place all the layers in the correct order. You can use z-index for this.
+![stacked cards](https://ucarecdn.com/96b4ae53-9d3d-4caa-af3a-168a86073fc5/)
+
+
+It's easy to place papers one on top of the other, but it's a bit tricky with divs. Here, you will need to work with positioning and the backface-visibility property.
+![stacked](https://ucarecdn.com/724889b7-6a94-4143-8f37-befe8981909f/)
+
+You can flip the resulting paper card by hand, but for virtual cards, you'll use a cursor. Wrap your card in a container div and implement the logic: if you hover on the container, the card inside will be flipped. Here, you will need to work with the properties transition and transform.
+
+Finally, add styles to the back side of your flashcards, and you are all set!
+
+### Objectives
+Make the answer on the back side appear when the user hovers over the card.
+
+### Example
+The final result of your project will look something like this:
+
+![result](https://ucarecdn.com/170970bc-f84f-4631-b53f-75357f3f7099/)
